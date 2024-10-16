@@ -1,4 +1,7 @@
+import Cabecalho from "@/components/Cabecalho/Cabecalho";
+import Rodape from "@/components/Rodape/Rodape";
 import type { Metadata } from "next";
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Projeto Atlas",
@@ -12,8 +15,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body>
+      <body className="font-righteous">
+        <Cabecalho />
         {children}
+        <Rodape />
       </body>
     </html>
   );
