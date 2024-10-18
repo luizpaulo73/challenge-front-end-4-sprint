@@ -4,17 +4,17 @@ import { listaRedes } from "./redes";
 export default function Rodape() {
   return (
     <footer className="bg-black h-24">
-      <div className="flex justify-between p-5">
-    <nav>
+      <div className="flex justify-between p-5 items-center">
+    <nav className="w-1/2">
       <a href="/contato">
-        <div className="flex">
-          <Image src="/img/contato.png" alt="Fale Conosco" width={100} height={100}/>
+        <div className="flex gap-5 items-center">
+          <Image src="/img/contato.png" alt="Fale Conosco" width={50} height={50}/>
           <h1 className="text-white">Fale conosco</h1>
         </div>
       </a>
     </nav>
     <nav>
-      <ul className="flex">
+      <ul className="flex justify-around items-center gap-6">
         {listaRedes.map((rede) => (
           <li key={rede.id}>
             <a href={rede.url}>

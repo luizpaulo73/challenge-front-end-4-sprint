@@ -15,7 +15,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className="font-righteous">
+      <head>
+        <link rel="shortcut icon" href="/img/logo-porto.png" type="image/x-icon" />
+      </head>
+      <body className="font-righteous flex flex-col justify-between h-screen bg-back-image">
         <Cabecalho />
         {children}
         <Rodape />

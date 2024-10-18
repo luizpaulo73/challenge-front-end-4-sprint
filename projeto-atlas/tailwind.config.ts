@@ -14,6 +14,9 @@ const config: Config = {
       },
       fontFamily: {
         righteous: ['righteous' , 'sans-serif']
+      },
+      backgroundImage: {
+        'back-image' : "url('/img/background.jpg')"
       }
     },
   },
